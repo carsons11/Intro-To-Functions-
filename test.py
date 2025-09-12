@@ -1,7 +1,7 @@
-import turtle
+""" import turtle
 from turtle import *
 t = Turtle()
-t.shape('turtle')
+t.shape('turtle') """
 
 """ def square(x):
     t.forward(x)
@@ -32,6 +32,51 @@ def addSquares(iRange):
         length += 25
 addSquares(5) """
 
+""" def square(x):
+    t.forward(x)
+    t.left(90)
+    t.forward(x)
+    t.left(90)
+    t.forward(x)
+    t.left(90)
+    t.forward(x)
+    t.left(90)
+
+def addsquare():
+    y = 5
+    for i in range(60):
+        square(y)
+        t.right(5)
+        y=y+5
+        t.speed(200)
+addsquare()
+turtle.done() """
+
+""" #strings represent characters or text """
+""" x = "Dang it Yi"
+name = input("What's your name")
+print(name)
+def add(x,y):
+    return x + y
+z = add(5,15)
+print(z) """
+
+""" #integers of numbers
+a = int('5')
+bill = input("How much was the bill?")
+print(int(bill) * .15) """
+
+""" name = "Mason"
+#use F string
+print(f"His name is {name}")
+ """
+import turtle
+from turtle import *
+t = Turtle()
+t.shape('turtle')
+
+
+
 def square(x):
     t.forward(x)
     t.left(90)
@@ -42,19 +87,7 @@ def square(x):
     t.forward(x)
     t.left(90)
 
-for i in range(60):
-    square(5)
-    t.speed(200)
-sidelength = 100
-rotate = 90
-def square(x,y):
-    for i in range(4):
-        t.forward(x)
-        t.left(y)
-def addSquares(iRange):
-    length = 5
-    for i in range(iRange):
-        square(length, 90)
-        length += 5
-        t.left(5)
-addSquares(5)
+for i in range(100):
+    square(200)
+    t.right(5)
+    t.speed(500) 

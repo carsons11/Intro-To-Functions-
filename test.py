@@ -122,26 +122,18 @@ import turtle
 from turtle import *
 t = Turtle()
 t.shape('turtle')
-
-def square(x):
-    t.forward(x)
-    t.left(90)
-    t.forward(x)
-    t.left(90)
-    t.forward(x)
-    t.left(90)
-    t.forward(x)
-    t.left(90)
-
-def square():
-    for i in range(60):
-        square(5)
+t.speed(999)
+sidelength = 100
+rotate = 144
+def square(x,y):
+    for i in range(5):
+        t.forward(x)
+        t.left(y)
+def addSquares(iRange):
+    length = 5
+    for i in range(iRange):
+        square(length, 144)
+        length += 5
         t.right(5)
-        t.speed(200)
-def addsquares(x):
-        length = 25
-        for i in range(60):
-            square(length,90)
-            length = length * 5 
-addsquares()
+addSquares(60)
 turtle.done()
